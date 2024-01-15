@@ -46,9 +46,11 @@ Swagger UI documentation is available at [http://localhost:8080/swagger-ui.html]
 
 ## API Endpoints
 
-Here are some of the key API endpoints provided by this CRUD application:
+Here are some of the key API endpoints provided by this REST API:
 
 - **List all products**
 - **Add new Product**
 - **Update Product**
 - **Delete Product**
+
+![image](https://github.com/sabeer02/REST-API/assets/99068582/2178352d-3f3d-423c-a361-9480f4ecbca4)

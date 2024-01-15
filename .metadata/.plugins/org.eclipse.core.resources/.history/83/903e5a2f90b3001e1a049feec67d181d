@@ -1,0 +1,11 @@
+package com.product.RESTapi.model;
+
+public class Product {
+	
+	@Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String name;
+	private Double price;
+	
+}

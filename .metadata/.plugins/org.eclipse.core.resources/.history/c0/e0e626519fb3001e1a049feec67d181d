@@ -1,0 +1,5 @@
+package com.product.RESTapi.model;
+
+public class ProductRequest {
+
+}

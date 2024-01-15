@@ -1,0 +1,6 @@
+package com.product.RESTapi.model;
+
+public class Product {
+	
+	
+}

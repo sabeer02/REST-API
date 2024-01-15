@@ -1,0 +1,8 @@
+package com.product.RESTapi.serviceimpl;
+
+import com.product.RESTapi.serve.ProductService;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
+}

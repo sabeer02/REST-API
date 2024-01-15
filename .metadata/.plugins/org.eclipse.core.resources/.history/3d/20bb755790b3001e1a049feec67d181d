@@ -1,0 +1,5 @@
+package com.product.RESTapi.repo;
+
+public interface ProductRepo extends JpaRepository<Product, Long> {
+
+}

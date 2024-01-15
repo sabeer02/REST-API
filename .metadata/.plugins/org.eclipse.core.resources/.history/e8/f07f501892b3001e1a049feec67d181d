@@ -1,0 +1,5 @@
+package com.product.RESTapi.controller;
+
+public class ProductController {
+
+}

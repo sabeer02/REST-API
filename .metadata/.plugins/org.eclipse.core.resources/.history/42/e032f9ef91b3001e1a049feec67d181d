@@ -1,0 +1,49 @@
+package com.product.RESTapi.serviceimpl;
+
+import java.util.List;
+
+import org.apache.el.stream.Optional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.product.RESTapi.model.Product;
+import com.product.RESTapi.repo.ProductRepo;
+import com.product.RESTapi.serve.ProductService;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+	
+	@Autowired
+	private ProductRepo productRepo;
+
+	@Override
+	public List<Product> getAllProducts() {
+		// TODO Auto-generated method stub
+		return productRepo.findAll();
+	}
+
+	@Override
+	public void saveProduct(Product product) {
+		this.productRepo.save(product);
+		
+	}
+
+	@Override
+	public Product getProductById(long id) {
+		Product product = null;
+		Optional<Product> optional = productRepo.findById(id);
+		if(optional!=null) {
+			product=optional.get();
+		}else {
+			throw new RuntimeException("Product Not Found !!!");
+		}
+		return product;
+	}
+
+	@Override
+	public void removeProductById(long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
